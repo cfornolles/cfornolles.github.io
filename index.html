@@ -122,13 +122,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <header class="w3-container w3-black"> 
             <span onclick="document.getElementById('id01').style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
-            <h2>Modal Header</h2>
+            <h2>Microsoft Sentinel</h2><br>
+            <p>Cloud System Information Event Management (SIEM)</p>
           </header>
           <div class="w3-container w3-red">
-            <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
-            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
-            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
-            <p>Some text..</p>
+            <p>Utilized custom PowerShell script to extract metadata from Windows Event Viewer, forwarding the data to a third-party API to derive geolocation data.</p>
+            <p>Configured Azure Log Analytics Workspace to ingest custom logs containing geographic information (latitude, longitude, state/province, and country) and limit data displayed with KQL (Kusto Query Language).</p>
+            <p>Created visual representations using pie charts, bar graphs, and world maps in Azure Sentinel (SIEM) Workbook to demonstrate the evolving global attack data for RDP Brute Force incidents targeting my Virtual Machine (Honeypot).</p>
           </div>
           <footer class="w3-container w3-black">
           <p>Modal Footer</p>
@@ -141,21 +141,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       
         
           <div class="w3-third" >
-    <img src="snort.png" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+    <img src="snort.png" style="width:100%" onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black">
 
-      <div id="id01" class="w3-modal">
+      <div id="id02" class="w3-modal">
         <div class="w3-modal-content">
             
           <header class="w3-container w3-black"> 
-            <span onclick="document.getElementById('id01').style.display='none'" 
+            <span onclick="document.getElementById('id02').style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
-            <h2>Modal Header</h2>
+            <h2>SNORT(IDS/IPS)</h2><br>
+            <p>Network Intrusion Detection Systems</p>
           </header>
           <div class="w3-container w3-red">
-            <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
-            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
-            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
-            <p>Some text..</p>
+            <p>Established a virtualized environment using VirtualBox (Oracle's Type-2 Hypervisor), configuring two Virtual Machines: one running Ubuntu as the target and the other running Kali Linux to generate network traffic.</p><br>
+            <p>Designed and implemented a customized Alert Rule for SNORT (IDS/IPS), specifically tailored to detect and analyze TCP/IP traffic within the environment.</p><br>
+            <p>Successfully executed an NMAP command aimed at the Honeypot, resulting in SNORT (IDS/IPS) promptly detecting and triggering the rule, accompanied by a relevant alert message.</p><br>
           </div>
           <footer class="w3-container w3-black">
           <p>Modal Footer</p>
@@ -166,7 +166,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
         
     <div class="w3-third" >
-    <img src="nessus.png" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+    <img src="nessus.png" style="width:100%" onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-black">
       
       <br>
       <br>
@@ -174,19 +174,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
       
 
-      <div id="id01" class="w3-modal">
+      <div id="id03" class="w3-modal">
         <div class="w3-modal-content">
             
           <header class="w3-container w3-black"> 
-            <span onclick="document.getElementById('id01').style.display='none'" 
+            <span onclick="document.getElementById('id03').style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
-            <h2>Modal Header</h2>
+            <h2>Nessus (Tenable)</h2><br>
+            <p>Vulnerability Management</p>
           </header>
           <div class="w3-container w3-red">
-            <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
-            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
-            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
-            <p>Some text..</p>
+            <p>Installed and configured Nessus Essentials for credential vulnerability scans on Windows 10 hosts, optimizing security assessment and risk mitigation.</p><br>
+            <p>Implemented end-to-end vulnerability management on sandbox networks, encompassing Discovery, Prioritization, Assessment, Reporting, Remediation, and Verification.</p><br>
+            <p>Conducted vulnerability assessments with Nessus, efficiently identifying and remediating vulnerabilities, while developing automated processes to proactively address risks associated with Windows updates and third-party software.</p><br>
           </div>
           <footer class="w3-container w3-black">
           <p>Modal Footer</p>
