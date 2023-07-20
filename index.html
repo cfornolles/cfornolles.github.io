@@ -117,172 +117,66 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
 
       <!------------------------------------------------------------------------------------- Photo grid ------------------------------------------------------------------------------------->
-  <div class="w3-row">
+      <div class="w3-row">
 
     <div class="w3-third" >
-    <img src="microsoftsentinel.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
-    <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom">
-            
-          <header class="w3-container w3-red"> 
-            <span onclick="document.getElementById('id01').style.display='none'" 
-            class="w3-button w3-display-topright">x</span>
-            <h2>Microsoft Sentinel</h2>
-            <p>Cloud SIEM (System Information Event Management)<p>
-          </header>
-          <div class="w3-container w3-white">
 
-          <br><div class="w3-content w3-display-container">
-  <img class="mySlides" src="siem4.png" style="width:100%">
-  <img class="mySlides" src="siem1.PNG" style="width:100%">
-  <img class="mySlides" src="siem3.PNG" style="width:100%">
-  <img class="mySlides" src="siem2.PNG" style="width:100%">
-  <img class="mySlides" src="siem5.PNG" style="width:100%">
-  <img class="mySlides" src="siem6.PNG" style="width:100%">
-  <img class="mySlides" src="siem7.PNG" style="width:100%">
-  <img class="mySlides" src="siem8.PNG" style="width:100%">
-  <img class="mySlides" src="siem9.PNG" style="width:100%">
-  <img class="mySlides" src="siem10.PNG" style="width:100%">
-  <img class="mySlides" src="siem11.PNG" style="width:100%">
-  <img class="mySlides" src="siem12.PNG" style="width:100%">
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div><br>
-            
-            <p>· Utilized custom PowerShell script to extract metadata from Windows Event Viewer, forwarding the data to a third-party API to derive geolocation data.</p>
-            <p>· Configured Azure Log Analytics Workspace to ingest custom logs containing geographic information (latitude, longitude, state/province, and country) and limit data displayed with KQL (Kusto Query Language).</p>
-            <p>· Created visual representations using pie charts, bar graphs, and world maps in Azure Sentinel (SIEM) Workbook to demonstrate the evolving global attack data for RDP Brute Force incidents targeting my Virtual Machine (Honeypot).</p><br>
-            <p></p>           
-          </div>
-          <footer class="w3-container w3-red">
-            <p><span onclick="document.getElementById('id01').style.display='none'" 
-            class="w3-button">Return</span></p>
-          </footer>
-    </div>
-    </div>
-
-   <!--  <img src="snort.jpg" style="width:100%" onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black">
-    <div id="id02" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom">
-            
-          <header class="w3-container w3-red"> 
-            <span onclick="document.getElementById('id02').style.display='none'" 
-            class="w3-button w3-display-topright">x</span>
-            <h2>Microsoft Sentinel</h2>
-            <p>Cloud SIEM (System Information Event Management)<p>
-          </header>
-          <div class="w3-container w3-white">
-
-          <br><div class="w3-content w3-display-container">
-  <img class="mySlides" src="siem4.png" style="width:100%">
-  <img class="mySlides" src="siem1.PNG" style="width:100%">
-  <img class="mySlides" src="siem3.PNG" style="width:100%">
-  <img class="mySlides" src="siem2.PNG" style="width:100%">
-  <img class="mySlides" src="siem5.PNG" style="width:100%">
-  <img class="mySlides" src="siem6.PNG" style="width:100%">
-  <img class="mySlides" src="siem7.PNG" style="width:100%">
-  <img class="mySlides" src="siem8.PNG" style="width:100%">
-  <img class="mySlides" src="siem9.PNG" style="width:100%">
-  <img class="mySlides" src="siem10.PNG" style="width:100%">
-  <img class="mySlides" src="siem11.PNG" style="width:100%">
-  <img class="mySlides" src="siem12.PNG" style="width:100%">
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div><br>
-            
-            <p>· Utilized custom PowerShell script to extract metadata from Windows Event Viewer, forwarding the data to a third-party API to derive geolocation data.</p>
-            <p>· Configured Azure Log Analytics Workspace to ingest custom logs containing geographic information (latitude, longitude, state/province, and country) and limit data displayed with KQL (Kusto Query Language).</p>
-            <p>· Created visual representations using pie charts, bar graphs, and world maps in Azure Sentinel (SIEM) Workbook to demonstrate the evolving global attack data for RDP Brute Force incidents targeting my Virtual Machine (Honeypot).</p><br>
-            <p></p>           
-          </div>
-          <footer class="w3-container w3-red">
-            <p><span onclick="document.getElementById('id01').style.display='none'" 
-            class="w3-button">Return</span></p>
-          </footer>
-    </div></div> -->
-      
-    </div>
-    
-   <div class="w3-third" >
-      
-    <img src="snort.jpg" style="width:100%" onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black">
-    <div id="id02" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom">
-            
-          <header class="w3-container w3-red"> 
-            <span onclick="document.getElementById('id02').style.display='none'" 
-            class="w3-button w3-display-topright">x</span>
-            <h2>SNORT(IDS/IPS)</h2>
-            <p>Intrusion Detection and Prevention<p>
-          </header>
-          <div class="w3-container w3-white">
-
-          <br><div class="w3-content w3-display-container">
-  <img class="mySlides" src="ids1.PNG" style="width:100%">
-  <img class="mySlides" src="ids2.PNG" style="width:100%">
-  <img class="mySlides" src="ids3.PNG" style="width:100%">
-  <img class="mySlides" src="ids4.PNG" style="width:100%">
-  <img class="mySlides" src="ids5.PNG" style="width:100%">
-  <img class="mySlides" src="ids6.png" style="width:100%">
-  <img class="mySlides" src="ids7.PNG" style="width:100%">
-  <img class="mySlides" src="ids8.PNG" style="width:100%">
-  <img class="mySlides" src="ids9.PNG" style="width:100%">
-  <img class="mySlides" src="ids10.PNG" style="width:100%">
-  <img class="mySlides" src="ids11.PNG" style="width:100%">
-  <img class="mySlides" src="ids12.PNG" style="width:100%">
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div><br>
-            
-            <p>Established a virtualized environment using VirtualBox (Oracle's Type-2 Hypervisor), configuring two Virtual Machines: one running Ubuntu as the target and the other running Kali Linux to generate network traffic.</p>
-            <p>Designed and implemented a customized Alert Rule for SNORT (IDS/IPS), specifically tailored to detect and analyze TCP/IP traffic within the environment.</p>
-            <p>Successfully executed an NMAP command aimed at the Honeypot, resulting in SNORT (IDS/IPS) promptly detecting and triggering the rule, accompanied by a relevant alert message.</p><br>
-            <p></p>           
-          </div>
-          <footer class="w3-container w3-red">
-            <p><span onclick="document.getElementById('id02').style.display='none'" 
-            class="w3-button">Return</span></p>
-          </footer>
-    </div>
-    </div>
-
-    <!--  <img src="Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+      <img src="/Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
 
       <div id="id01" class="w3-modal">
         <div class="w3-modal-content">
             
-          <header class="w3-container w3-black"> 
+          <header class="w3-container w3-red"> 
             <span onclick="document.getElementById('id01').style.display='none'" 
-            class="w3-button w3-display-topright">x</span>
+            class="w3-button w3-display-topright">&times;</span>
             <h2>Modal Header</h2>
           </header>
-          <div class="w3-container w3-red">
+          <div class="w3-container w3-white">
             <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
             Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
             Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
             <p>Some text..</p>
+            <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+              Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+              Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+              <p>Some text..</p>
+              <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+                <p>Some text..</p>
+                <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                  Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                  Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+                  <p>Some text..</p>
+                  <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                    Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                    Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+                    <p>Some text..</p>
+                    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                      Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                      Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+                      <p>Some text..</p>
+                      <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                        Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                        Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+                        <p>Some text..</p>
           </div>
-          <footer class="w3-container w3-black">
+          <footer class="w3-container w3-red">
             <p>Modal Footer</p>
           </footer>
+    
         </div>
-        </div>
+      </div>
 
-    </div>
-    <div class="w3-third" >
-
-
-      <img src="Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+      <img src="/Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
 
       <div id="id01" class="w3-modal">
         <div class="w3-modal-content">
             
           <header class="w3-container w3-black"> 
             <span onclick="document.getElementById('id01').style.display='none'" 
-            class="w3-button w3-display-topright">x</span>
+            class="w3-button w3-display-topright">&times;</span>
             <h2>Modal Header</h2>
           </header>
           <div class="w3-container w3-red">
@@ -298,14 +192,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </div>
       </div>
 
-      <img src="Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+      <img src="/Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
 
       <div id="id01" class="w3-modal">
         <div class="w3-modal-content">
             
           <header class="w3-container w3-black"> 
             <span onclick="document.getElementById('id01').style.display='none'" 
-            class="w3-button w3-display-topright">x</span>
+            class="w3-button w3-display-topright">&times;</span>
             <h2>Modal Header</h2>
           </header>
           <div class="w3-container w3-red">
@@ -319,10 +213,156 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           </footer>
     
         </div>
-      </div> 
+      </div>
 
-    </div> -->
+    </div>
+
+    <div class="w3-third" >
+
+
+      <img src="/Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            
+          <header class="w3-container w3-black"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container w3-red">
+            <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-black">
+            <p>Modal Footer</p>
+          </footer>
     
+        </div>
+      </div>
+
+      <img src="/Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            
+          <header class="w3-container w3-black"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container w3-red">
+            <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-black">
+            <p>Modal Footer</p>
+          </footer>
+    
+        </div>
+      </div>
+
+      <img src="/Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            
+          <header class="w3-container w3-black"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container w3-red">
+            <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-black">
+            <p>Modal Footer</p>
+          </footer>
+    
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w3-third" >
+
+
+      <img src="/Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            
+          <header class="w3-container w3-black"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container w3-red">
+            <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-black">
+            <p>Modal Footer</p>
+          </footer>
+    
+        </div>
+      </div>
+
+      <img src="/Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            
+          <header class="w3-container w3-black"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container w3-red">
+            <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-black">
+            <p>Modal Footer</p>
+          </footer>
+    
+        </div>
+      </div>
+
+      <img src="/Linux.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            
+          <header class="w3-container w3-black"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container w3-red">
+            <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+            Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-black">
+            <p>Modal Footer</p>
+          </footer>
+    
+        </div>
+      </div>
+    </div>
   </div>
 
   <!------------------------------------------------------------------------------------- Contact Section ------------------------------------------------------------------------------------->
