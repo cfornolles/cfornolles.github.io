@@ -203,16 +203,53 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <footer class="w3-container w3-red">
           <p><span onclick="document.getElementById('id03').style.display='none'" 
             class="w3-button w3-black w3-round w3-black">Return</span></p>
-          </footer>
+          </footer></div></div>
           
-        </div>
-        </div>
-            <a><center><button class="w3-button w3-round w3-light-grey w3-padding-large w3-section"> Click to View More! </button></center></a>
-
-        </div>
-
       
-  </div>
+      <!--| More Projects Button |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <a><center><div><p onclick="document.getElementById('moreprojects').style.display='block'" class="w3-button w3-black w3-border w3-border-red w3-round-large w3-text-light-grey" >View More Projects</p>
+      <div id="moreprojects" class="w3-modal">
+        <div class="w3-modal-content"> 
+          <header class="w3-container w3-red"> 
+            <span onclick="document.getElementById('moreprojects').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container w3-black">
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
+            <div id="Demo1" class="w3-container w3-hide w3-red">
+              <h4 class="w3-red">Section 1</h4>
+              <p class="w3-red">Some text..</p>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
+            <div id="Demo2" class="w3-container w3-hide w3-red">
+              <h4 class="w3-red">Section 1</h4>
+              <p class="w3-red">Some text..</p>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
+            <div id="Demo3" class="w3-container w3-hide w3-red">
+              <h4 class="w3-red">Section 1</h4>
+              <p class="w3-red">Some text..</p>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+          </div>
+          <footer class="w3-container w3-red">
+            <p><span onclick="document.getElementById('moreprojects').style.display='none'" 
+              class="w3-button">Return</span></p>
+          </footer></div></div></div></center></a>
+
+    <!--| More Projects Button |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    
+    
+    
+    </div></div>
 
   <!------------------------------------------------------------------------------------- Contact Section ------------------------------------------------------------------------------------->
 
@@ -256,6 +293,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!--------------------------------------------------------------------------------------- END PAGE CONTENT --------------------------------------------------------------------------------------->
 </div>
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
 
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+  </script>
 </body>
 </html>
