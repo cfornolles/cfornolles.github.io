@@ -14,333 +14,250 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
+#main {margin-left: 60px; margin-right: 60px;}
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+@media only screen and (max-width: 600px) {#main {margin-left: 0; margin-right: 0;}} 
 </style>
 </head>
 
   
-<body class="w3-black">
-
-
-<!--Icon Bar (Sidebar - hidden on small screens)--------------------------------------------------------------------------------------->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-black">
-<!--Avatar image in top left corner-->
-<img src="Linux.png"  style="width:100%" class="w3-opacity" >
-<a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-<i class="fa fa-home w3-xxlarge"></i>
-<p>HOME</p>
-</a>
-<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-<i class="fa fa-user w3-xxlarge"></i>
-<p>ABOUT</p>
-</a>
-<a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-<i class="fa fa-eye w3-xxlarge"></i>
-<p>PROJECTS</p>
-</a>
-<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-<i class="fa fa-envelope w3-xxlarge"></i>
-<p>CONTACT</p>
-</a>
-</nav>
-
-  
-<!--Navbar on small screens (Hidden on medium and large screens)--------------------------------------------------------------------------------------->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
+<body class="bgimg">
 <!--Page Content--------------------------------------------------------------------------------------->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1><span class="w3-hide-small">Aspiring </span>Threat Hunter</h1>
-    <p class="w3-animate-right">Curt Fornolles</p>
-    <br><br>
-   <p><img src="hunter.gif" alt="boy" class="w3-image" width="992" height="1108"> </p>
+  <header class="w3-container w3-padding-32 w3-center w3-text-light-grey" id="home">
+    <h1 class="w3-animate-right">CURT FORNOLLES</h1>
   </header>
 
-  <!--About Section--------------------------------------------------------------------------------------->
-  <div class="w3-content w3-justify w3-text-red w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Biography</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Curt Fornolles, a dedicated individual, relocated to the United States with the aim of achieving the American Dream. He possesses a strong desire to become a Cybersecurity Threat Hunter and works diligently to enhance his skills by pursuing College Education, obtaining Cybersecurity Certifications, and networking with industry experts. Despite an 8-year career in the restaurant industry, he successfully transitioned into the Information Technology field in 2021. Curt derives great fulfillment from resolving IT challenges and ensuring security, which inspired him to pursue a career as a Threat Hunter after shadowing a professional in this domain. His enthusiasm for analyzing potential threats and vulnerabilities within IT infrastructures drives him to safeguard critical systems and strengthen their security.</p>
-
-    <!------------------------------------------------------------------------------------- Certification ------------------------------------------------------------------------------------->
-    <h3 class="w3-padding-16 w3-text-light-grey">Certifications</h3><img src="photogif.gif" alt="alt text"  style="float:right ; width:50%">
-    <p class="w3-wide">Security+</p>
-    <p class="w3-wide">Network+</p>
-    <p class="w3-wide">A+</p>
-
-    <!------------------------------------------------------------------------------------- Education ------------------------------------------------------------------------------------->
-    <h3 class="w3-padding-24 w3-text-light-grey">Education</h3>  
-    <p><span class="w3-large w3-margin-right">Hillsborough Community College</span></p>
-    <p>Cybersecurity AS ( Class of 2023 )</p>
-
-    <!------------------------------------------------------------------------------------- Education ------------------------------------------------------------------------------------->
-    <!--<h3 class="w3-padding-24 w3-text-light-grey">Education</h3>  
-    <p>My education stems from the robust Hillsborough Community College Cybersecurity Program.</p><br>
-    <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7FPGtczyfnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
-    picture-in-picture" allowfullscreen></iframe></div>-->
-    
-    <!-- Work History -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Work History</h3>  
-    <p><span class="w3-large w3-margin-right">National Veterinary Associate</span></p>
-    <p>Technical Support Specialist II<span> ( 2 years )</p><br>
-    
-  <!------------------------------------------------------------------------------------- End About Section ------------------------------------------------------------------------------------->
-
-    <button onclick="document.getElementById('resumepreview').style.display='block'" class="w3-button w3-black w3-border w3-border-red w3-round-large w3-text-light-grey"><i class="fa fa-eye"></i> RESUME</button>
-    <div id="resumepreview" class="w3-modal">
-    <div class="w3-modal-content w3-black w3-border w3-border-red w3-round-large w3-text-light-grey">
-    <header class="w3-container w3-black"> 
-    <span onclick="document.getElementById('resumepreview').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-    <h2>Resume Preview</h2></header>    
-    <div class="w3-container w3-black"><img class="mySlides" src="Resumepreview.PNG" style="width:100%"></div>
-    <footer class="w3-container w3-black"><p><center><span onclick="document.getElementById('resumepreview').style.display='none'" 
-    class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">Return</span></center></p>
-    </footer></div></div>
-
-    <a href="CurtFornolles.pdf" download><button class="w3-button w3-black w3-border w3-border-red w3-round-large w3-text-light-grey">
-    <i class="fa fa-download"></i> .PDF</button></a>
-    <a href="CurtFornolles.docx" download><button class="w3-button w3-black w3-border w3-border-red w3-round-large w3-text-light-grey">
-    <i class="fa fa-download"></i> .DOCX</button></a>
-  </div>
-
-    <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="projects">
-    <h2 class="w3-text-light-red">Featured Projects</h2>
-    <p class="w3-wide">Click the images below.</p>
-    <hr style="width:200px" class="w3-opacity">
 
 <!-------------------------------------------------------------------------------------| Featured Projects |------------------------------------------------------------------------------------->
-    <div class="w3-row  w3-text-red">
+    <div class="w3-row-padding w3-center w3-margin-top w3-text-red">
 
-    <div class="w3-third w3-text-light-red" >
-    <img src="microsoftsentinel.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
-    <div><center><p class="w3-text-light-red">System Information Event Management(SIEM)</p></center></div>
-    <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-black w3-border w3-border-red w3-round-large w3-text-light-grey">
-            
-            <header class="w3-container w3-black"> 
-            <span onclick="document.getElementById('id01').style.display='none'" 
-            class="w3-button w3-display-topright">&times;</span>
-            <h2>Microsoft Sentinel</h2>
-            <p>Cloud System Information Event Management(SIEM)</p>
-            </header>
-            <div class="w3-container w3-black">
+
+      <div class="w3-third">
+      <div class="w3-container w3-white w3-panel w3-border w3-round-xlarge w3-padding-large" style="min-height:800px ;opacity:.9;">
+      
+      <br><h2 class="w3-padding-large w3-text-black">ABOUT ME</h2>
+    
+
+      <p>Curt Fornolles, a dedicated individual, relocated to the United States with the aim of achieving the American Dream. 
+        He possesses a strong desire to become a Cybersecurity Threat Hunter and works diligently to enhance his skills by 
+        pursuing College Education, obtaining Cybersecurity Certifications, and networking with industry experts. Despite an 
+        8-year career in the restaurant industry, he successfully transitioned into the Information Technology field in 2021. 
+        Curt derives great fulfillment from resolving IT challenges and ensuring security, which inspired him to pursue a career 
+        as a Threat Hunter after shadowing a professional in this domain. His enthusiasm for analyzing potential threats and 
+        vulnerabilities within IT infrastructures drives him to safeguard critical systems and strengthen their security.</p>
+  
+          
+      </div>
+      </div>
+
+
+
+
+
+
+    <div class="w3-third">
+    <div class="w3-container w3-cyan w3-panel w3-border w3-round-xlarge w3-padding-large" style="min-height:800px ;opacity:.9;">
+    
+    <br><h2 class="w3-padding-16 w3-text-black">CERTIFICATIONS</h2>
+  
+    <p class=" w3-text-black">Security+ | Network+ | A+</p>
+
+    <!------------------------------------------------------------------------------------- Education ------------------------------------------------------------------------------------->
+    <h3 class="w3-padding-24 w3-text-black">Education</h3>  
+    <p><span class="w3-large w3-margin-right w3-text-black">Hillsborough Community College</span></p>
+    <p class=" w3-text-black">Cybersecurity AS ( Class 2023 )</p>
+    
+    <!-- Work History -->
+    <h3 class="w3-padding-24 w3-text-black">Work History</h3>  
+    <span class="w3-text-black">National Veterinary Associate</span>
+    <p class="w3-text-black" >Technical Support Specialist II<span> 2020 - CURRENT</p><br>
+    
+  <!------------------------------------------------------------------------------------- End About Section ------------------------------------------------------------------------------------->
+  <a href="CurtFornolles.pdf" download><button class="w3-button w3-light-blue w3-border w3-border-white w3-round-large w3-text-black">
+  <i class="fa fa-download"></i> Download Resume PDF</button></a>
+  
+  <br><br><a href="CurtFornolles.docx" download><button class="w3-button w3-light-blue w3-border w3-border-white w3-round-large w3-text-black">
+  <i class="fa fa-download"></i> Download Resume DOCX</button></a>
+               
+  </div></div>
+
+  <div class="w3-third">
+  <div class="w3-container w3-light-blue w3-panel w3-border w3-round-xlarge w3-padding-large" style="min-height:550px ;opacity:.9;">
+
+            <br><h2 class="w3-padding-16 w3-text-black">PROJECT & LABS</h2>
+      
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <button onclick="document.getElementById('Demo1').style.display='block'" class="w3-button w3-light-blue w3-text-black"> MICROSOFT SENTINEL (SIEM) </button>
+
+
+            <div id="Demo1" class="w3-modal">
+            <div class="w3-modal-content w3-black w3-border w3-border-black w3-text-light-grey w3-padding-large">
+            <span onclick="document.getElementById('Demo1').style.display='none'" class="w3-button w3-display-topright">Close</span>
+
+            <h4 class="w3-black w3-center-align">Cloud System Information Event Management(SIEM)</h4>
             <img class="mySlides" src="siem10.PNG" style="width:100%">
             <img class="mySlides" src="siem11.PNG" style="width:100%">
-            <p>Utilized custom PowerShell script to extract metadata from Windows Event Viewer, forwarding the data to a third-party API to derive geolocation data.</p>
+            <p class="w3-black w3-left-align">Utilized custom PowerShell script to extract metadata from Windows Event Viewer, forwarding the data to a third-party API to derive geolocation data.</p>
             <img class="mySlides" src="siem7.PNG" style="width:100%">
             <img class="mySlides" src="siem1.PNG" style="width:100%">
-            <p>Configured Azure Log Analytics Workspace to ingest custom logs containing geographic information (latitude, longitude, state/province, and country) and limit data displayed with KQL (Kusto Query Language).</p>
+            <p class="w3-black w3-left-align">Configured Azure Log Analytics Workspace to ingest custom logs containing geographic information (latitude, longitude, state/province, and country) and limit data displayed with KQL (Kusto Query Language).</p>
             <img class="mySlides" src="siem5.PNG" style="width:100%">
-            <p>Created visual representations using pie charts, bar graphs, and world maps in Azure Sentinel (SIEM) Workbook to demonstrate the evolving global attack data for RDP Brute Force incidents targeting my Virtual Machine (Honeypot).</p>
+            <p class="w3-black w3-left-align">Created visual representations using pie charts, bar graphs, and world maps in Azure Sentinel (SIEM) Workbook to demonstrate the evolving global attack data for RDP Brute Force incidents targeting my Virtual Machine (Honeypot).</p>
             <img class="mySlides" src="siem4.png" style="width:100%">
             <img class="mySlides" src="siem9.PNG" style="width:100%">
-            </div>
             <footer class="w3-container w3-black">
-            <p><center><span onclick="document.getElementById('id01').style.display='none'" 
-            class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">Return</span></center></p>
-            </footer></div></div></div>
 
-  <div class="w3-third w3-text-light-red" >
-  <img src="snort.png" style="width:100%" onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black">
-  <div><center><p class="w3-text-light-red">Intrustion Detection and Prevention(IDS/IPS)</p></center></div>
-  <div id="id02" class="w3-modal">
-  <div class="w3-modal-content w3-black w3-border w3-border-red w3-round-large w3-text-light-grey">
+            <p><span onclick="document.getElementById('Demo1').style.display='none'" class="w3-button w3-black w3-border w3-border-white w3-round-large w3-white w3-center">Return</span></p>
             
-            <header class="w3-container w3-black"> 
-            <span onclick="document.getElementById('id02').style.display='none'" 
-            class="w3-button w3-display-topright">&times;</span>
-            <h2>SNORT(IDS/IPS)</h2>
-            <p>Network Intrusion Detection Systems</p>
-            </header>
-            <div class="w3-container w3-black">
+            </footer>
+            </div></div><br>
+
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <button onclick="document.getElementById('Demo2').style.display='block'" class="w3-button w3-light-blue w3-text-black"> SNORT (IDS/IPS) </button>
+
+            <div id="Demo2" class="w3-modal">
+            <div class="w3-modal-content w3-black w3-border w3-border-black w3-text-light-grey w3-padding-large">
+            <span onclick="document.getElementById('Demo2').style.display='none'" class="w3-button w3-display-topright">Close</span>
+
+            <h4 class="w3-black w3-left-align">Intrustion Detection and Prevention(IDS/IPS)</h4>
             <img class="mySlides" src="ids1.PNG" style="width:100%">
-            <p>Established a virtualized environment using VirtualBox (Oracle's Type-2 Hypervisor), configuring two Virtual Machines: one running Ubuntu as the target and the other running Kali Linux to generate network traffic.</p>
+            <p class="w3-black w3-left-align">Established a virtualized environment using VirtualBox (Oracle's Type-2 Hypervisor), configuring two Virtual Machines: one running Ubuntu as the target and the other running Kali Linux to generate network traffic.</p>
             <img class="mySlides" src="ids8.PNG" style="width:100%">
             <img class="mySlides" src="ids9.PNG" style="width:100%">
             <img class="mySlides" src="ids7.PNG" style="width:100%">
-            <p>Designed and implemented a customized Alert Rule for SNORT (IDS/IPS), specifically tailored to detect and analyze TCP/IP traffic within the environment.</p>
+            <p class="w3-black w3-left-align">Designed and implemented a customized Alert Rule for SNORT (IDS/IPS), specifically tailored to detect and analyze TCP/IP traffic within the environment.</p>
             <img class="mySlides" src="ids4.PNG" style="width:100%">
             <img class="mySlides" src="ids3.PNG" style="width:100%">
             <img class="mySlides" src="ids5.PNG" style="width:100%">
-            <p>Successfully executed an NMAP command aimed at the Honeypot, resulting in SNORT (IDS/IPS) promptly detecting and triggering the rule, accompanied by a relevant alert message.</p>
+            <p class="w3-black w3-left-align">Successfully executed an NMAP command aimed at the Honeypot, resulting in SNORT (IDS/IPS) promptly detecting and triggering the rule, accompanied by a relevant alert message.</p>
             <img class="mySlides" src="ids6.png" style="width:100%">
-            </div>
             <footer class="w3-container w3-black">
-            <p><center><span onclick="document.getElementById('id02').style.display='none'" 
-            class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">Return</span></center></p>
-            </footer></div></div></div>
-
-  <div class="w3-third w3-text-light-red" >
-  <img src="nessus.png" style="width:100%" onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-black">
-  <div><center><p class="w3-text-light-red">Vulnertability Management and Risk Mitigation</p></center></div>
-  <div id="id03" class="w3-modal">
-  <div class="w3-modal-content w3-black w3-border w3-border-red w3-round-large w3-text-light-grey">
+              
+            <p><span onclick="document.getElementById('Demo2').style.display='none'" class="w3-button w3-black w3-border w3-border-white w3-round-large w3-white w3-center">Return</span></p>
             
-            <header class="w3-container w3-black"> 
-            <span onclick="document.getElementById('id03').style.display='none'" 
-            class="w3-button w3-display-topright">&times;</span>
-            <h2>Nessus (Tenable)</h2>
-            <p>Vulnerability Management</p>
-            </header>
-            <div class="w3-container w3-black">
+            </footer></div></div><br>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <button onclick="document.getElementById('Demo3').style.display='block'" class="w3-button w3-light-blue w3-text-black"> NESSUS </button>
+
+            <div id="Demo3" class="w3-modal">
+            <div class="w3-modal-content w3-black w3-border w3-border-black w3-text-light-grey w3-padding-large">
+            <span onclick="document.getElementById('Demo3').style.display='none'" class="w3-button w3-display-topright">Close</span>
+
+            <h4 class="w3-black w3-left-align">Vulnerability Management</h4>
             <img class="mySlides" src="nessus1.PNG" style="width:100%">
-            <p>Installed and configured Nessus Essentials for credential vulnerability scans on Windows 10 hosts, optimizing security assessment and risk mitigation.</p>
+            <p class="w3-black w3-left-align">Installed and configured Nessus Essentials for credential vulnerability scans on Windows 10 hosts, optimizing security assessment and risk mitigation.</p>
             <img class="mySlides" src="nessus2.PNG" style="width:100%">
-            <p>Implemented end-to-end vulnerability management on sandbox networks, encompassing Discovery, Prioritization, Assessment, Reporting, Remediation, and Verification.</p>
+            <p class="w3-black w3-left-align">Implemented end-to-end vulnerability management on sandbox networks, encompassing Discovery, Prioritization, Assessment, Reporting, Remediation, and Verification.</p>
             <img class="mySlides" src="nessus3.PNG" style="width:100%">
-            <p>Conducted vulnerability assessments with Nessus, efficiently identifying and remediating vulnerabilities, while developing automated processes to proactively address risks associated with Windows updates and third-party software.</p>
+            <p class="w3-black w3-left-align">Conducted vulnerability assessments with Nessus, efficiently identifying and remediating vulnerabilities while developing automated processes to proactively address risks associated with Windows updates and third-party software.</p>
             <img class="mySlides" src="nessus5.PNG" style="width:100%">
-            </div>
             <footer class="w3-container w3-black">
-            <p><center><span onclick="document.getElementById('id03').style.display='none'" 
-            class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">Return</span></center></p>
-            </footer></div></div><br></div>
-  <!-------------------------------------------------------------------------------------| Projects |------------------------------------------------------------------------------------->
-     
-      
 
+            <p><span onclick="document.getElementById('Demo3').style.display='none'" class="w3-button w3-black w3-border w3-border-white w3-round-large w3-white w3-center">Return</span></p>
 
-  <!-------------------------------------------------------------------------------| More Projects Button |-------------------------------------------------------------------------------->
+            </footer></div></div><br>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <button onclick="document.getElementById('Demo4').style.display='block'" class="w3-button w3-light-blue w3-text-black">MALWARE ANALYSIS</button>
 
-  <div><a><center><div><p onclick="document.getElementById('moreprojects').style.display='block'" 
-    class="w3-button w3-black w3-border w3-border-red w3-round-large w3-text-light-grey" ><i class="fa fa-eye"></i>&nbsp;View More Projects</p>
-    <div id="moreprojects" class="w3-modal">
-    <div class="w3-modal-content w3-black w3-border w3-border-red w3-round-large w3-text-light-grey"> 
-    <span onclick="document.getElementById('moreprojects').style.display='none'" 
-    class="w3-button w3-display-topright">&times;</span>
-    <h2>Project List</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-container w3-black"><br>
-    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div id="Demo4" class="w3-modal">
+            <div class="w3-modal-content w3-black w3-border w3-border-black w3-text-light-grey w3-padding-large">
+            <span onclick="document.getElementById('Demo4').style.display='none'" class="w3-button w3-display-topright">Close</span>
+            
+            <h4 class="w3-black w3-left-align">Malware Analysis using AnyRun and Sputnik</h4>
+            <img class="mySlides" src="anyrun4.PNG" style="width:100%">
+            <img class="mySlides" src="anyrun.PNG" style="width:100%">
+            <p class="w3-black w3-left-align">Proficiently utilized AnyRun (Malware Sandbox) to detonate deprecated Firefox, evaluating indicators of compromise, MITRE ATT&CK matrix, process graphs, and generating comprehensive text reports.</p>
+            <img class="mySlides" src="anyrun2.PNG" style="width:100%">
+            <img class="mySlides" src="anyrun3.PNG" style="width:100%">
+            <p class="w3-black w3-left-align">Conducted hash integrity analysis using Sputnik to examine the identified hash, ensuring accurate and thorough assessment of potential security threats.</p>
+            <img class="mySlides" src="MITRE2.PNG" style="width:100%">
+            <p class="w3-black w3-left-align">Demonstrated expertise in cybersecurity tools and methodologies to analyze and mitigate potential malware risks, contributing to the enhancement of system security.</p>
+            <img class="mySlides" src="MITRE.PNG" style="width:100%">
+            <footer class="w3-container w3-black">
+
+            <p><span onclick="document.getElementById('Demo4').style.display='none'" class="w3-button w3-black w3-border w3-border-white w3-round-large w3-white w3-center">Return</span></p>
+  
+              </footer></div></div><br>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <button onclick="document.getElementById('Demo5').style.display='block'" class="w3-button w3-light-blue w3-text-black">NETWORKING (CISCO)</button>
+
+            <div id="Demo5" class="w3-modal">
+            <div class="w3-modal-content w3-black w3-border w3-border-black w3-text-light-grey w3-padding-large">
+            <span onclick="document.getElementById('Demo5').style.display='none'" class="w3-button w3-display-topright">Close</span>
+
+            <h4 class="w3-black w3-left-align">Network Map</h4>
+            <img class="mySlides" src="packettracer.PNG" style="width:100%">
+            <p class="w3-black w3-left-align">Proficiently designed and simulated network environments using Packet Tracer, gaining valuable hands-on experience with various commands and networking concepts.</p>
+            <img class="mySlides" src="packettracer1.PNG" style="width:100%">
+            <p class="w3-black w3-left-align">Strengthened wireless security by configuring router security mode to WPA2 Personal with AES encryption, ensuring data confidentiality and integrity in live environments.</p>
+            <img class="mySlides" src="packettracer2.PNG" style="width:100%">
+            <footer class="w3-container w3-black">
+
+            <p><span onclick="document.getElementById('Demo5').style.display='none'" class="w3-button w3-black w3-border w3-border-white w3-round-large w3-white w3-center">Return</span></p>
     
-    <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align w3-hover-white fa fa-angle-down w3-text-red">&nbsp;&nbsp;1. Microsoft Sentinel (SIEM)</button>
-    <div id="Demo1" class="w3-container w3-hide w3-black w3-panel w3-border w3-border-red w3-round">
-    <h4 class="w3-black w3-left-align">Cloud System Information Event Management(SIEM)</h4>
-    <img class="mySlides" src="siem10.PNG" style="width:100%">
-    <img class="mySlides" src="siem11.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Utilized custom PowerShell script to extract metadata from Windows Event Viewer, forwarding the data to a third-party API to derive geolocation data.</p>
-    <img class="mySlides" src="siem7.PNG" style="width:100%">
-    <img class="mySlides" src="siem1.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Configured Azure Log Analytics Workspace to ingest custom logs containing geographic information (latitude, longitude, state/province, and country) and limit data displayed with KQL (Kusto Query Language).</p>
-    <img class="mySlides" src="siem5.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Created visual representations using pie charts, bar graphs, and world maps in Azure Sentinel (SIEM) Workbook to demonstrate the evolving global attack data for RDP Brute Force incidents targeting my Virtual Machine (Honeypot).</p>
-    <img class="mySlides" src="siem4.png" style="width:100%">
-    <img class="mySlides" src="siem9.PNG" style="width:100%">
-    <footer class="w3-container w3-black"><p><button onclick="myFunction('Demo1')" class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">close</button></p></footer>
-    </div>
-    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-black w3-left-align w3-hover-white fa fa-angle-down w3-text-red">&nbsp;&nbsp;2. SNORT (IDS/IPS)</button>
-    <div id="Demo2" class="w3-container w3-hide w3-black w3-panel w3-border w3-border-red w3-round">
-    <h4 class="w3-black w3-left-align">Intrustion Detection and Prevention(IDS/IPS)</h4>
-    <img class="mySlides" src="ids1.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Established a virtualized environment using VirtualBox (Oracle's Type-2 Hypervisor), configuring two Virtual Machines: one running Ubuntu as the target and the other running Kali Linux to generate network traffic.</p>
-    <img class="mySlides" src="ids8.PNG" style="width:100%">
-    <img class="mySlides" src="ids9.PNG" style="width:100%">
-    <img class="mySlides" src="ids7.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Designed and implemented a customized Alert Rule for SNORT (IDS/IPS), specifically tailored to detect and analyze TCP/IP traffic within the environment.</p>
-    <img class="mySlides" src="ids4.PNG" style="width:100%">
-    <img class="mySlides" src="ids3.PNG" style="width:100%">
-    <img class="mySlides" src="ids5.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Successfully executed an NMAP command aimed at the Honeypot, resulting in SNORT (IDS/IPS) promptly detecting and triggering the rule, accompanied by a relevant alert message.</p>
-    <img class="mySlides" src="ids6.png" style="width:100%">
-    <footer class="w3-container w3-black"><p><button onclick="myFunction('Demo2')" class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">close</button></p></footer>
-    </div>
-    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-black w3-left-align w3-hover-white fa fa-angle-down w3-text-red">&nbsp;&nbsp;3. NESSUS (Vulnerability Scanner)</button>
-    <div id="Demo3" class="w3-container w3-hide w3-black w3-panel w3-border w3-border-red w3-round">
-    <h4 class="w3-black w3-left-align">Vulnerability Management</h4>
-    <img class="mySlides" src="nessus1.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Installed and configured Nessus Essentials for credential vulnerability scans on Windows 10 hosts, optimizing security assessment and risk mitigation.</p>
-    <img class="mySlides" src="nessus2.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Implemented end-to-end vulnerability management on sandbox networks, encompassing Discovery, Prioritization, Assessment, Reporting, Remediation, and Verification.</p>
-    <img class="mySlides" src="nessus3.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Conducted vulnerability assessments with Nessus, efficiently identifying and remediating vulnerabilities while developing automated processes to proactively address risks associated with Windows updates and third-party software.</p>
-    <img class="mySlides" src="nessus5.PNG" style="width:100%">
-      <footer class="w3-container w3-black"><p><button onclick="myFunction('Demo3')" class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">close</button></p></footer>
-    </div>
-    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-black w3-left-align w3-hover-white fa fa-angle-down w3-text-red">&nbsp;&nbsp;4. AnyRun & Sputnik (Malware Analysis)</button>
-    <div id="Demo4" class="w3-container w3-hide w3-black w3-panel w3-border w3-border-red w3-round">
-    <h4 class="w3-black w3-left-align">Malware Analysis</h4>
-    <img class="mySlides" src="anyrun4.PNG" style="width:100%">
-    <img class="mySlides" src="anyrun.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Proficiently utilized AnyRun (Malware Sandbox) to detonate deprecated Firefox, evaluating indicators of compromise, MITRE ATT&CK matrix, process graphs, and generating comprehensive text reports.</p>
-    <img class="mySlides" src="anyrun2.PNG" style="width:100%">
-    <img class="mySlides" src="anyrun3.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Conducted hash integrity analysis using Sputnik to examine the identified hash, ensuring accurate and thorough assessment of potential security threats.</p>
-    <img class="mySlides" src="MITRE2.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Demonstrated expertise in cybersecurity tools and methodologies to analyze and mitigate potential malware risks, contributing to the enhancement of system security.</p>
-    <img class="mySlides" src="MITRE.PNG" style="width:100%">
-      <footer class="w3-container w3-black"><p><button onclick="myFunction('Demo4')" class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">close</button></p></footer>
-    </div>
-    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <button onclick="myFunction('Demo5')" class="w3-btn w3-block w3-black w3-left-align w3-hover-white fa fa-angle-down w3-text-red">&nbsp;&nbsp;5. Cisco Packet Tracer (Network Map)</button>
-    <div id="Demo5" class="w3-container w3-hide w3-black w3-panel w3-border w3-border-red w3-round">
-    <h4 class="w3-black w3-left-align">Network Map</h4>
-    <img class="mySlides" src="packettracer.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Proficiently designed and simulated network environments using Packet Tracer, gaining valuable hands-on experience with various commands and networking concepts.</p>
-    <img class="mySlides" src="packettracer1.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Strengthened wireless security by configuring router security mode to WPA2 Personal with AES encryption, ensuring data confidentiality and integrity in live environments.</p>
-    <img class="mySlides" src="packettracer2.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Enhanced network security by generating a Crypto Key and implementing SSH version 2 to secure remote management. Additionally, applied switch port port-security to switches and created VLANs for efficient network segmentation.</p>
-      <footer class="w3-container w3-black"><p><button onclick="myFunction('Demo5')" class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">close</button></p></footer>
-    </div>
-    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <button onclick="myFunction('Demo6')" class="w3-btn w3-block w3-black w3-left-align w3-hover-white fa fa-angle-down w3-text-red">&nbsp;&nbsp;6. Website (Coding)</button>
-    <div id="Demo6" class="w3-container w3-hide w3-black w3-panel w3-border w3-border-red w3-round">
-    <h4 class="w3-black w3-left-align">Coding: HTML5, CSS, & Javascript</h4>
-    <img class="mySlides" src="website3.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Developed the website's core structure using HTML and applied visually appealing styles using CSS, while ensuring seamless functionality with JavaScript.</p>
-    <img class="mySlides" src="website2.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Leveraged Visual Studio Code, along with live extensions, to test and fine-tune the website code effectively.</p>
-    <img class="mySlides" src="website.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Successfully hosted the website on GitHub, demonstrating proficiency in version control and web deployment.</p>
-      <footer class="w3-container w3-black"><p><button onclick="myFunction('Demo6')" class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">close</button></p></footer>
-    </div>
-    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <button onclick="myFunction('Demo7')" class="w3-btn w3-block w3-black w3-left-align w3-hover-white fa fa-angle-down w3-text-red">&nbsp;&nbsp;7. Mitre Att&ck Framework</button>
-    <div id="Demo7" class="w3-container w3-hide w3-black w3-panel w3-border w3-border-red w3-round">
-    <h4 class="w3-black w3-left-align">Adversarial Tactics, Techniques, and Common Knowledge</h4>
-    <img class="mySlides" src="siem9.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Gained hands-on experience with Mitre ATT&CK framework through practical application in Microsoft Sentinel and AnyRun environments.</p>
-    <img class="mySlides" src="MITRE.PNG" style="width:100%">
-    <p class="w3-black w3-left-align">Demonstrated expertise in identifying and remediating Indicators of Compromise (IOC) and vulnerabilities using industry best practices.</p>
-    <img class="mySlides" src="MITRE2.PNG" style="width:100%">
-      <footer class="w3-container w3-black"><p><button onclick="myFunction('Demo7')" class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">close</button></p></footer>
-    </div>
+            </footer></div></div><br>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <button onclick="document.getElementById('Demo6').style.display='block'" class="w3-button w3-light-blue w3-text-black">WEB DEVELOPING</button>
 
-<!-----------------------------------------------------------------------------------| More Projects Button |----------------------------------------------------------------------------------------------->
-  <div><p></p></div></div>
-  <p><span onclick="document.getElementById('moreprojects').style.display='none'" 
-  class="w3-button w3-black w3-border w3-border-red w3-round-large w3-white">Return</span></p>
-  </div></div></div></center></a></div>
+            <div id="Demo6" class="w3-modal">
+            <div class="w3-modal-content w3-black w3-border w3-border-black w3-text-light-grey w3-padding-large">
+            <span onclick="document.getElementById('Demo6').style.display='none'" class="w3-button w3-display-topright">Close</span>
+
+            <h4 class="w3-black w3-left-align">Coding: HTML5, CSS, & Javascript</h4>
+            <img class="mySlides" src="website3.PNG" style="width:100%">
+            <p class="w3-black w3-left-align">Developed the website's core structure using HTML and applied visually appealing styles using CSS, while ensuring seamless functionality with JavaScript.</p>
+            <img class="mySlides" src="website2.PNG" style="width:100%">
+            <p class="w3-black w3-left-align">Leveraged Visual Studio Code, along with live extensions, to test and fine-tune the website code effectively.</p>
+            <img class="mySlides" src="website.PNG" style="width:100%">
+            <p class="w3-black w3-left-align">Successfully hosted the website on GitHub, demonstrating proficiency in version control and web deployment.</p>
+            <footer class="w3-container w3-black">
+
+            <p><span onclick="document.getElementById('Demo6').style.display='none'" class="w3-button w3-black w3-border w3-border-white w3-round-large w3-white w3-center">Return</span></p>
+      
+            </footer></div></div><br>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <button onclick="document.getElementById('Demo7').style.display='block'" class="w3-button w3-light-blue w3-text-black">MITRE ATT&CK FRAMEWORK</button>
+
+            <div id="Demo7" class="w3-modal">
+            <div class="w3-modal-content w3-black w3-border w3-border-black w3-text-light-grey w3-padding-large">
+            <span onclick="document.getElementById('Demo7').style.display='none'" class="w3-button w3-display-topright">Close</span>
+
+            <h4 class="w3-black w3-left-align">Adversarial Tactics, Techniques, and Common Knowledge</h4>
+            <img class="mySlides" src="siem9.PNG" style="width:100%">
+            <p class="w3-black w3-left-align">Gained hands-on experience with Mitre ATT&CK framework through practical application in Microsoft Sentinel and AnyRun environments.</p>
+            <img class="mySlides" src="MITRE.PNG" style="width:100%">
+            <p class="w3-black w3-left-align">Demonstrated expertise in identifying and remediating Indicators of Compromise (IOC) and vulnerabilities using industry best practices.</p>
+            <footer class="w3-container w3-black">
+
+            <p><span onclick="document.getElementById('Demo7').style.display='none'" class="w3-button w3-black w3-border w3-border-white w3-round-large w3-white w3-center">Return</span></p>
+      
+            </footer></div></div><br>
+    <!-----------------------------------------------------------------------------------| More Projects Button |----------------------------------------------------------------------------------------------->
+          <div><p></p></div><br>
+          <p><span onclick="document.getElementById('moreprojects').style.display='none'" 
+          class="w3-button w3-border w3-border-white w3-round-large w3-cyan w3-text-black">Return</span></p>
+
+          </div></div></div>
+        
+          </div>
+        
+          </div></div>
   <!-------------------------------------------------------------------------------------| More Projects Button |----------------------------------------------------------------------------------------------->
 
   <!-------------------------------------------------------------------------------------| Contact Section |------------------------------------------------------------------------------------->
 
     
-  <div class="w3-padding-64 w3-content w3-text-red" id="contact">
+  <div class="w3-padding-64 w3-content w3-text-white w3-padding-large"" id="contact">
     <h2 class="w3-text-light-grey">Contact Me</h2>
     <p  class="w3-text-light-grey">Let's get in touch! Send me an email with the link below.</p>
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p class="w3-text-light-red"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Tampa FL, US </p>
-      <p class="w3-text-light-red"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 (813) 326-6447 </p>
-      <a href="mailto:curtfornolles@gmail.com"><p class="w3-text-light-red" ><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: curtfornolles@gmail.com </p></a>
+      <p class="w3-text-light-white"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Tampa FL, US </p>
+      <p class="w3-text-light-white"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 (813) 326-6447 </p>
+      <a href="mailto:curtfornolles@gmail.com"><p class="w3-text-light-white" ><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: curtfornolles@gmail.com </p></a>
 
   </div>
   
